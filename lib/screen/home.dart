@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               Image.asset("assets/images/logo.png"),
+              SizedBox(height: 50,),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(
