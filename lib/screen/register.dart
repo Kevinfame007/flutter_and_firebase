@@ -14,6 +14,37 @@ class _RegisterScreenState extends State<RegisterScreen> {
       appBar: AppBar(
         title: Text("สร้างบัญชีผู้ใช้ระบบ"),
       ),
+      body: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: SingleChildScrollView(
+            child: Form(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text("อีเมล", style: TextStyle(fontSize: 20)),
+                  TextFormField(),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text("รหัสผ่าน", style: TextStyle(fontSize: 20)),
+                  TextFormField(),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      child: Text("ลงทะเบียน", style: TextStyle(fontSize: 20)),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
